@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Mapping Example</title>
+    <style>
+        img {
+            max-width: 100%; /* Make image responsive */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Image Mapping Example</h1>
+
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20190227165729/area11.png" alt="Example Image" usemap="#image-map">
+
+<map name="image-map">
+    <!-- Rectangle Area -->
+    <area shape="rect" coords="50,50,200,150" href="https://www.crescent.education" alt="Example 1" target="_blank">
+    
+    <!-- Circle Area -->
+    <area shape="circle" coords="450,100,50" href="https://www.google.com" alt="Example 2" target="_blank">
+    
+    <!-- Polygon Area -->
+    <area shape="poly" coords="100,100,500,150" href="https://www.w3schools.com" alt="Example 3" target="_blank">
+</map>
+
+</body>
+</html>

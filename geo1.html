@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>My Geolocation</h1>
+<p id="geolocation"></p>
+<script>
+navigator.geolocation.getCurrentPosition(p => 
+    document.getElementById("geolocation").textContent = `Latitude: ${p.coords.latitude}, Longitude: ${p.coords.longitude}`, 
+    () => document.getElementById("geolocation").textContent = "Error getting geolocation");
+</script>
+</body>
+</html>
